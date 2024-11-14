@@ -1,0 +1,73 @@
+body {
+  margin: 0; 
+  font-family: Arial, sans-serif; 
+}
+#banner{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  display: flex;
+  align-items:center;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
+.container input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: -30px; /* Space between each image container */
+  flex-wrap: wrap;
+  margin-top: 70px;
+  padding: 50px;
+}
+
+.artist-card {
+  text-align: center;
+  width: 250px; /* Fixed width for each image container */
+}
+
+.artist-card a {
+  text-decoration: none;
+  color: black; /* Sets text color to black */
+}
+
+.artist-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px; /* Optional: adds slight rounding to the image corners */
+}
+
+.artist-name {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.gallery-container2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px; /* Space between each image container */
+  flex-wrap: wrap;
+  
+  padding: 50px;
+}
