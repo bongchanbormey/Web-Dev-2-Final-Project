@@ -8,7 +8,33 @@
     <script src="/Javascript/Artist.js" defer></script>
 </head>
 <body>
-    <img id="banner" src="artist_images/Banner.jpg"alt="Banner">
+
+<!-- Navigation Bar -->
+<header>
+    <a href="/HTML/index.html" class="logo"><img src="/Assets/Selapak Logo.png" alt="Selapak Logo"></a>
+    <ul class="navmenu">
+        <li><a href="/HTML/index.html">Home</a></li>
+        <li><a href="/HTML/shop.html">Shop</a></li>
+        <li><a href="/HTML/events.html">Events</a></li>
+        <li><a href="/HTML/Artist.html">Artists</a></li>
+    </ul>
+
+    <div class="nav-icon">
+        <a href="/HTML/shop.html" type="_blank"><i class="bx bx-search" id="individual-nav-icon"></i></a>
+        <a href="/HTML/user_profile.html" type="_blank"><i class="bx bx-user" id="individual-nav-icon"></i></a>
+        <a href="/HTML/add_to_cart.html" type="_blank"><i class="bx bx-cart" id="individual-nav-icon"></i></a>
+    
+        <div class="bx bx-menu" id="menu-icon">
+            <div class="dropdown-content" id="dropdown-menu">
+                <a href="/HTML/index.html">Home</a>
+                <a href="/HTML/shop.html">Shop</a>
+                <a href="/HTML/events.html">Events</a>
+                <a href="/HTML/Artist.html">Artists</a>
+            </div>
+        </div>
+    </div>
+</header>
+    <img id="banner" src="/Assets/Banner.jpg"alt="Banner">
 
     <div class="container">
       <input type="text" id="artist-input" placeholder="Enter artist name">
