@@ -20,3 +20,4 @@ menuIcon.addEventListener('mouseleave', () => {
 dropdownMenu.addEventListener('mouseleave', () => {
     dropdownMenu.style.display = 'none';
 });
+//---------- End of Dropdown Content ----------
