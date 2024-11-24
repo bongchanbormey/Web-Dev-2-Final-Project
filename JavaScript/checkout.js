@@ -78,7 +78,7 @@ window.onscroll = function() {
     } else {
       scrollToTopButton.style.display = "none";
     }
-  };
+};
   
 // Smooth scroll to top when the button is clicked
 document.getElementById("scrollToTop").onclick = function() {
