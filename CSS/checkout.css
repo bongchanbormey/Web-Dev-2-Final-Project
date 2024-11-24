@@ -371,3 +371,25 @@ ul {
 /* ---------- End of Footer ---------- */
 
 
+/* ---------- Scroll-to-top Button ----------*/
+.scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #b4d4ff;
+    color: black;
+    padding: 10px 12px;
+    font-size: 18px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+  
+.scrollToTop:hover {
+    background-color: #2b2e34;
+    color: #fff;
+}
+/* ---------- Scroll-to-top Button ----------*/
+
+
