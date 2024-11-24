@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     list-style: none;
     text-decoration: none; 
 }
@@ -16,7 +16,9 @@ body {
     flex-direction: column;
     min-height: 100vh; 
     margin: 0; 
+    padding: 0;
 }
+
 
 main {
     flex: 1;
@@ -122,18 +124,18 @@ header {
 
 
 /* ---------- Payment Section ---------- */
-.container {
+.payment-container {
     margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f6f6f6;
+    background-color: #f6f6f6;
     padding: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.container form {
+.payment-container form {
     width: 800px;
     padding: 40px;
     background: #fff;
@@ -245,10 +247,11 @@ form .btn {
     cursor: pointer;
     transition: .5s;
 }
+/* #378cfa */
 
 form .btn:hover {
     transform: scale(1);
-    background: #7bb1f9;
+    background: #9ec7fc;
 }
 
 input.error, select.error {
@@ -260,3 +263,111 @@ input.error, select.error {
 }
 
 /* ---------- End of Payment Section ---------- */
+
+
+/* ---------- Footer ---------- */
+.footer-container {
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: black;
+    padding: 70px 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #b4d4ff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 17px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 350;
+	color: #cccccc;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #2b2e34;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #2b2e34;
+	background-color: #b4d4ff;
+}
+
+.copyright { 
+    color: white;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* ---------- End of Footer ---------- */
+
+
