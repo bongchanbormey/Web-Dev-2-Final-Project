@@ -238,6 +238,8 @@ form .btn {
     width: 100%;
     padding: 12px;
     background: #b4d4ff;
+    font-family: Lato;
+    font-weight: 500;
     border: none;
     outline: none;
     border-radius: 6px;

@@ -124,23 +124,39 @@ header {
 
 
 /* ---------- Add-to-Cart Section ---------- */
-.cart-page{
-    margin-top: 200px;
+.cart-page-container{
+    margin-top: 80px;
     margin-bottom: 100px;
+    width: 100%;
+    justify-content: center;
+    display: grid;
 }
 
-table{
+main h1 {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: Libre Carlson;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.cart-info{
+.cart-items table {
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-info {
     display: flex;
     flex-wrap: wrap;
     margin-left: 0;
 }
 
-th{
+th {
     text-align: left;
     padding: 5px;
     color: black;
@@ -148,60 +164,64 @@ th{
     font-weight: normal;
 }
 
-td{
+td {
     padding: 10px 5px;
 }
 
-td input{
+td input {
     width: 40px;
     height: 30px;
     padding: 5px;
 }
 
-td a{
+td a {
     color: #b4d4ff;
     font-size: 15px;
 
 }
 
-td img{
+td img {
     width: 80px;
     height: 80px;
     margin-right: 10px;
 }
 
-.total-price{
+.total-price {
     display: flex;
     justify-content: flex-end;
     margin-right: 5px;
-
+    width: 100%;
 }
 
-.total-price table{
+.total-price table {
     border-top: 3px solid #000;
     width: 80%;
     max-width: 300px;
 
 }
 
-.box{
+.checkout-button {
     display: inline-block;
-    width: 200px;
-    height: 50px;
+    width: 170px;
     background-color: #b4d4ff;
     text-align: center;
-    line-height: 50px;
+    line-height: 45px;
     color: black;
-    border: 2px solid black;
+    border: none;
+    outline: none;
     cursor: pointer;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-left: 700px;
+    margin-top: 25px;
+    margin-left: 850px;
+    transition: .5s;
+    border-radius: 6px;
 }
 
-.box a {
+.checkout-button a {
     text-decoration: none;
     color: inherit;
+    font-size: 17px;
+    font-family: Lato;
+    font-weight: 500;
 }
 
 body { 
