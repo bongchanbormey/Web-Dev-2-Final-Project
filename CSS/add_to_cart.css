@@ -206,22 +206,23 @@ td img {
     background-color: #b4d4ff;
     text-align: center;
     line-height: 45px;
-    color: black;
+    text-decoration: none;
+    color: #000;
     border: none;
+    border-radius: 6px;;
     outline: none;
     cursor: pointer;
-    margin-top: 25px;
-    margin-left: 850px;
-    transition: .5s;
-    border-radius: 6px;
-}
-
-.checkout-button a {
-    text-decoration: none;
-    color: inherit;
     font-size: 17px;
     font-family: Lato;
     font-weight: 500;
+    transition: .5s;
+    margin-top: 25px;
+    margin-left: 850px;
+}
+
+.checkout-button:hover {
+    transform: scale(1);
+    background: #9ec7fc;
 }
 
 body { 
