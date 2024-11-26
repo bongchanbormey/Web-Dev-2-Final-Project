@@ -1,6 +1,27 @@
 /* Import fonts: Libre Carlson, Lato and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Raleway:wght@800&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Lato;
+    list-style: none;
+    text-decoration: none; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+main {
+    flex: 1;
+} 
+
 /* ---------- Navigation Bar ---------- */
 header {
     position: fixed;
@@ -98,6 +119,7 @@ header {
 }
 
 /* ---------- End of Navigation Bar ---------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -113,10 +135,10 @@ body {
 .header {
     font-family: Libre Caslon;
     position: relative;
-    height: 300px;
-    background-image: url('header-background.jpg');
+    height: 500px;
+    background-image: url('/Assets/event0.png');
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
 }
 
 .overlay {
