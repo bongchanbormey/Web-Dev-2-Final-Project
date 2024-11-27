@@ -123,148 +123,45 @@ header {
 /* ---------- End of Navigation Bar ---------- */
 
 
-/* ---------- Payment Section ---------- */
-.payment-container {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f6f6f6;
-    padding: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* ---------- Thank You Message ---------- */
+.thank-you-container {
+    margin-top:300px;
+    margin-bottom: 200px;
+    text-align: center;
 }
 
-.payment-container form {
-    width: 800px;
-    padding: 40px;
-    background: #fff;
-    border-radius: 10px;
-}
-
-form .row {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.row .column {
-    flex: 1 1 250px;
-}
-
-.column .title {
-    font-size: 20px;
+.thank-you-container h1 {
+    font-size: 36px;
     color: #333;
-    text-transform: uppercase;
-    margin-bottom: 5px;
 }
 
-.column .input-box {
-    margin: 15px 0;
+.thank-you-container p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
 }
 
-.input-box span {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.input-box input, .input-box select {
-    width: 100%;
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-.input-box select {
-    width: 100%;
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-    background: #fff;
-    appearance: none; 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    /* down arrow svg */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='size-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 10px) center;
-    background-size: 16px 16px;
-}
-
-.input-box {
-    position: relative;
-}
-
-.input-box::after {
-    content: '';
-    position: absolute;
-    right: 15px; 
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-.column .flex {
-    display: flex;
-    gap: 15px;
-}
-
-.flex .input-box {
-    width: 150%;
-    margin-top: 5px;
-    font-display: space-between;
-}
-
-.input-box img {
-    height: 34px;
-    filter: none;
-    margin: 2px 0 0 0;
-    padding: 0;
-}
-
-#country-dropdown {
-    width: 200px; 
-    max-width: 400px; 
-}
-
-input[placeholder="11000"] {
-    width: 100%; 
-    max-width: 150px; 
-}
-
-form .btn {
-    width: 100%;
+.back-to-home {
+    display: inline-block;
+    margin-top: 50px;
     padding: 12px;
-    background: #b4d4ff;
-    font-family: Lato;
+    background-color: #b4d4ff;
+    color: #000;
+    text-decoration: none;
     font-weight: 500;
+    border-radius: 6px;
     border: none;
     outline: none;
-    border-radius: 6px;
-    font-size: 17px;
-    color: #000;
-    margin-top: 5px;
     cursor: pointer;
     transition: .5s;
+    width: 150px;
 }
-/* #378cfa */
 
-form .btn:hover {
+.back-to-home:hover {
     transform: scale(1);
     background: #9ec7fc;
 }
-
-input.error, select.error {
-    border-color: red !important;
-}
-
-.invalid {
-    border-color: red !important;
-}
-
-/* ---------- End of Payment Section ---------- */
+/* ---------- End of Thank You ---------- */
 
 
 /* ---------- Footer ---------- */
@@ -393,5 +290,3 @@ ul {
     color: #fff;
 }
 /* ---------- Scroll-to-top Button ----------*/
-
-
