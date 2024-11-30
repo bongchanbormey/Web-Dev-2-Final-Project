@@ -180,7 +180,7 @@ header {
 
 .artwork-img {
     width: 100%; 
-    height: auto; 
+    height: 270px; 
     margin-bottom: 15px;
 }
 
@@ -202,72 +202,6 @@ header {
     font-weight: 300;
     color: #000; 
 }
-/* #genre1 { margin-top: 10%; }
-
-
-
-.wish-to-read {
-    margin-right: 100px;
-    margin-left: 100px;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-}
-
-.book-img { 
-    width: 185px; 
-    height: 270px; 
-    transition: 0.3s;
-    box-shadow: 2px 3px 4px #666;
-}
-
-.book-img:hover { scale: 1.075; }
-
-.wish-to-read li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 0;
-}
-
-.reading-list h3{
-    font-size: 1.7em;
-    font-family: serif;
-    color: #333;
-    margin-left: 85px;
-    margin-bottom: 10px;
-}
-
-.reading-list1 h3 {
-    font-size: 1.7em;
-    font-family: serif;
-    color: #333;
-    margin-left: 85px;
-    margin-bottom: 10px;
-    margin-top: 10%;
-}
-
-.book-title, .author-genre {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    font-family: Poppins;
-    margin-left: 2px;
-}
-
-a { text-decoration: none; }
-
-.book-title {
-    color: #666;
-    font-size: 0.9em;
-    margin-top: 10px;
-}
-
-.author-genre {
-    color: #b175ff;
-    font-size: 0.75em;
-} */
 
 /* ---------- Footer ---------- */
 .footer-container {
