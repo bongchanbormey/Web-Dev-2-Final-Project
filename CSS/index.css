@@ -222,13 +222,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px; 
+    margin-bottom: 50px; 
 }
 
 .featured-artworks-header h2 {
     font-size: 2em; 
     font-weight: 600;
-    font-family: 'Libre Carslon', serif;
+    font-family: Playfair Display, serif;
     color: #000;
     margin: 0;
 }
@@ -237,8 +237,8 @@ header {
     padding: 10px 20px;
     width: 140px;
     font-size: 1em;
-    font-weight: 500;
-    font-family: Lato;
+    font-weight: 300;
+    font-family: Roboto, Lato;
     color: black;
     background-color: white; 
     border: 1px solid black;
@@ -292,3 +292,134 @@ header {
     font-weight: 300;
     color: #000; 
 }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .artwork-card {
+        width: 48%; /* 2 cards per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .artwork-card {
+        width: 100%; /* 1 card per row for very small screens */
+    }
+}
+/* ---------- End of Featured Artworks ---------- */
+
+
+/* ---------- Artist Spotlight ---------- */
+.artist-spotlight {
+    padding: 7%; 
+    background-color: #f6f6f6; 
+}
+
+.artist-spotlight-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.artist-spotlight-header h2 {
+    font-size: 2em; 
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    margin: 0;
+}
+
+.artist-row {
+    display: flex;
+    gap: 100px; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+.artist-pic {
+    flex: 1 1 30%;         
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #f6f6f6; 
+    margin-left: 60px; 
+}
+
+.artist-pic img {
+    width: 110%; 
+    height: 100%; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.artist-pic img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.artist-spotlight-content {
+    flex: 1 1 calc(50% - 100px);     /* Reduce the width to make shorter lines */
+    margin-left: 60px; 
+}
+
+.artist-spotlight-content h4 {
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.artist-content {
+    font-size: 1.35em;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.artist-spotlight-content a .view-all-button {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 8px 15px;
+    width: auto;
+}
+
+/* ---------- Responsiveness ---------- */
+@media (max-width: 768px) {
+    .artist-row {
+        flex-direction: column;     /* Stack image and content vertically */
+        align-items: center; 
+        gap: 40px; 
+    }
+
+    .artist-pic {
+        flex: 1 1 auto;             /* Adjust the width for smaller screens */
+        margin-left: 0; 
+        width: 100%; 
+    }
+
+    .artist-pic img {
+        width: 90%; 
+        height: auto;
+    }
+
+    .artist-spotlight-content {
+        flex: 1 1 auto; 
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .artist-spotlight-content h4 {
+        font-size: 2em; 
+    }
+
+    .artist-content {
+        font-size: 1.2em; 
+    }
+
+    .artist-spotlight {
+        padding: 5%; 
+    }
+}
+/* ---------- End of Artist Spotlight Section ---------- */
