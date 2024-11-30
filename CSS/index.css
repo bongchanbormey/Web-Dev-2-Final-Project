@@ -210,3 +210,85 @@ header {
     border: 1px solid #000;
     transform: scale(1);
 }
+
+
+/* ---------- Featured Artworks ---------- */
+.featured-artworks {
+    padding: 7%; 
+    background-color: #fff; 
+}
+
+.featured-artworks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+.featured-artworks-header h2 {
+    font-size: 2em; 
+    font-weight: 600;
+    font-family: 'Libre Carslon', serif;
+    color: #000;
+    margin: 0;
+}
+
+.view-all-button {
+    padding: 10px 20px;
+    width: 140px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: Lato;
+    color: black;
+    background-color: white; 
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-button:hover {
+    background-color: #000; 
+    color: white;
+    transform: scale(1); 
+}
+
+.artworks-row {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.artwork-card {
+    width: 22%;                 /* 4 cards in a row with spacing */
+    background-color: white;
+    padding: 17px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+    transition: transform 0.3s ease;
+}
+
+.artwork-card:hover {
+    transform: scale(1.04);
+}
+
+.artwork-image {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 15px;
+}
+
+.artwork-card .artist-name {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #000; 
+    margin: 10px 0 5px;
+}
+
+.artwork-card .artwork-details {
+    font-size: 1.03em;
+    font-weight: 300;
+    color: #000; 
+}
