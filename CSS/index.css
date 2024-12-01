@@ -580,3 +580,98 @@ header {
     }
 }
 /* ---------- End of Who We Are ---------- */
+
+
+/* ---------- Newsletter Subscription ---------- */
+.newsletter {
+    padding: 7%;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter h2 {
+    font-size: 2em;
+    font-weight: 600;
+    font-family: Playfair Display, serif;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: Lato, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    width: 65%;
+    max-width: 400px;
+    padding: 15px;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: Lato, sans-serif;
+    border: 1px solid #ccc;
+}
+
+.newsletter-form button {
+    padding: 15px 25px;
+    width: 150px;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: Roboto, Lato;
+    color: white;
+    background-color: #000;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.newsletter-form button:hover {
+    background-color: #b4d4ff;
+    color: black;
+    border: 1px solid #000;
+    transform: scale(1);
+}
+
+/* ---------- Responsiveness ---------- */
+@media (max-width: 768px) {
+    .newsletter h2 {
+        font-size: 2em; 
+    }
+    .newsletter p {
+        font-size: 1.1em; 
+    }
+    .newsletter-form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter h2 {
+        font-size: 1.8em; 
+    }
+    .newsletter p {
+        font-size: 1em; 
+        line-height: 1.6;
+    }
+    .newsletter-form button {
+        width: 100%;  
+        font-size: 1em;
+    }
+}
