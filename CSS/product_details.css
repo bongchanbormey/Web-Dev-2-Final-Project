@@ -121,20 +121,20 @@ header {
 /* ---------- End of Navigation Bar ---------- */
 /* -----------Main Section----------- */
 body {
-    font-family: Arial, sans-serif;
     margin-top: 100px;
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
-  }
+}
 
   .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
 
   .breadcrumb {
+    font-family: Lato;
     font-size: 14px;
     color: #777;
     margin-bottom: 20px;
@@ -156,6 +156,7 @@ body {
   }
 
   .artwork img {
+    width: 500px;
     max-width: 100%;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -164,9 +165,11 @@ body {
 
   .details {
     flex: 1;
+    margin-left: 30px;
   }
 
   .details h1 {
+    font-family: Libre Carlson;
     font-size: 28px;
     margin-bottom: 10px;
   }
@@ -174,7 +177,8 @@ body {
   .price {
     font-size: 20px;
     font-weight: bold;
-    margin: 10px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .metadata {
@@ -183,26 +187,66 @@ body {
   }
 
   .metadata div {
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
 
-  .artist-section {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  .metadata a{
+    color:#000000;
   }
 
-  .artist-section img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd;
+  .metadata a:hover{
+    text-decoration: underline;
   }
 
-  .artist-section p {
-    line-height: 1.6;
+  .description h3{
+    font-family: Libre Carlson;
+    margin-bottom: 20px;
   }
+
+.description p{
+    font-family: Lato;
+    font-size: 1em;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.buy-button button {
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: Roboto, Lato;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* "Explore Artworks" button */
+#add-to-cart {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #b4d4ff;
+}
+
+#add-to-cart:hover {
+    background-color: #000;
+    color: white;
+    border: 1px solid white;
+    transform: scale(1);
+}
+
+/* "Start Selling" button */
+#buy-now {
+    border: 1px solid white;
+    color: white;
+    background-color: #000;
+}
+
+#buy-now:hover {
+    color: #b4d4ff;
+    /* color: black; */
+    border: 1px solid #000;
+    transform: scale(1);
+}
 /* ---------- Footer ---------- */
 .footer-container {
     max-width: 1170px;
