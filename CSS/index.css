@@ -497,3 +497,86 @@ header {
         width: 100%;
     }
 }
+
+
+/* ---------- Who We Are ---------- */
+.who-we-are {
+    padding: 7%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+.who-we-are-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.who-we-are h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: Playfair Display, serif;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.who-we-are p {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: Lato, sans-serif;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.continue-reading-button {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: Roboto, Lato;
+    padding: 15px 20px;
+    width: 300px;
+    background-color: #b4d4ff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.continue-reading-button:hover {
+    background-color: #000;
+    color: white;
+    border: 1px solid white;
+    transform: scale(1);
+}
+
+
+/* ---------- Responsiveness ---------- */
+@media (max-width: 768px) {
+    .who-we-are h2 {
+        font-size: 2em; 
+    }
+    .who-we-are p {
+        font-size: 1.1em; 
+    }
+    .continue-reading-button {
+        width: 250px; 
+        font-size: 1.1em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .who-we-are h2 {
+        font-size: 1.8em; 
+    }
+    .who-we-are p {
+        font-size: 1em; 
+        line-height: 1.6; 
+    }
+    .continue-reading-button {
+        width: 200px; 
+        padding: 12px 15px; 
+        font-size: 1em; 
+    }
+}
+/* ---------- End of Who We Are ---------- */
