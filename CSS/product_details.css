@@ -1,5 +1,27 @@
 /* Import fonts: Libre Carlson, Lato and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Raleway:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Lato;
+    list-style: none;
+    text-decoration: none; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+main {
+    flex: 1;
+} 
+
 /* ---------- Navigation Bar ---------- */
 header {
     position: fixed;
@@ -97,3 +119,238 @@ header {
 }
 
 /* ---------- End of Navigation Bar ---------- */
+/* -----------Main Section----------- */
+body {
+    margin-top: 100px;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .breadcrumb {
+    font-family: Lato;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+
+  .breadcrumb a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .artwork {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .artwork img {
+    width: 500px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .details {
+    flex: 1;
+    margin-left: 30px;
+  }
+
+  .details h1 {
+    font-family: Libre Carlson;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .metadata {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .metadata div {
+    margin-bottom: 15px;
+  }
+
+  .metadata a{
+    color:#000000;
+  }
+
+  .metadata a:hover{
+    text-decoration: underline;
+  }
+
+  .description h3{
+    font-family: Libre Carlson;
+    margin-bottom: 20px;
+  }
+
+.description p{
+    font-family: Lato;
+    font-size: 1em;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.buy-button button {
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: Roboto, Lato;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* "Explore Artworks" button */
+#add-to-cart {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #b4d4ff;
+}
+
+#add-to-cart:hover {
+    background-color: #000;
+    color: white;
+    border: 1px solid white;
+    transform: scale(1);
+}
+
+/* "Start Selling" button */
+#buy-now {
+    border: 1px solid white;
+    color: white;
+    background-color: #000;
+}
+
+#buy-now:hover {
+    color: #b4d4ff;
+    /* color: black; */
+    border: 1px solid #000;
+    transform: scale(1);
+}
+/* ---------- Footer ---------- */
+.footer-container {
+    max-width: 1170px;
+    margin:auto;
+   }
+   
+   .row {
+    display: flex;
+    flex-wrap: wrap;
+   }
+   
+   ul {
+    list-style: none;
+   }
+   
+   .footer {
+    background-color: black;
+       padding: 70px 0;
+   }
+   
+   .footer-col{
+      width: 25%;
+      padding: 0 15px;
+   }
+   
+   .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+   }
+   
+   .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #b4d4ff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+   }
+   
+   .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+   }
+   
+   .footer-col ul li a{
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 350;
+    color: #cccccc;
+    display: block;
+    transition: all 0.3s ease;
+   }
+   
+   .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+   }
+   
+   .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #2b2e34;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+   }
+   
+   .footer-col .social-links a:hover{
+    color: #2b2e34;
+    background-color: #b4d4ff;
+   }
+   
+   .copyright { 
+       color: white;
+       font-family: Raleway;
+       font-size: 16px;
+       font-weight: 300;
+       margin-top: 20px;
+   }
+   
+   /*responsive*/
+   @media(max-width: 767px){
+     .footer-col{
+       width: 50%;
+       margin-bottom: 30px;
+   }
+   }
+   @media(max-width: 574px){
+     .footer-col{
+       width: 100%;
+   }
+   }
+   /* ---------- End of Footer ---------- */
+   
+   
+   
