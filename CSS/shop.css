@@ -203,6 +203,99 @@ header {
     color: #000; 
 }
 
+/* Media Queries for Tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .search-filter {
+        margin-right: 50px;
+        margin-top: 50px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .search-input {
+        width: 40%;
+        font-size: 14px;
+    }
+
+    .filter-dropdown {
+        width: 25%;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .artworks {
+        margin: 20px 50px;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    .artwork-card {
+        width: 30%;
+        padding: 15px;
+    }
+
+    .artwork-img {
+        height: 200px;
+    }
+
+    .artwork-card .artwork-name {
+        font-size: 1em;
+    }
+
+    .artwork-card .artist-name {
+        font-size: 0.85em;
+    }
+
+    .artwork-card .price {
+        font-size: 0.95em;
+    }
+}
+
+/* Media Queries for Phones (Max-width: 767px) */
+@media (max-width: 767px) {
+    .search-filter {
+        margin-top: 100px;
+        margin: 20px 10px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .search-input, .filter-dropdown {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .artworks {
+        margin: 10px 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .artwork-card {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .artwork-img {
+        height: 180px;
+    }
+
+    .artwork-card .artwork-name {
+        font-size: 0.9em;
+    }
+
+    .artwork-card .artist-name {
+        font-size: 0.8em;
+    }
+
+    .artwork-card .price {
+        font-size: 0.9em;
+    }
+}
+
+
 /* ---------- Footer ---------- */
 .footer-container {
     max-width: 1170px;

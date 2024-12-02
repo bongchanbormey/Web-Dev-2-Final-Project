@@ -119,6 +119,7 @@ header {
 }
 
 /* ---------- End of Navigation Bar ---------- */
+
 /* -----------Main Section----------- */
 body {
     margin-top: 100px;
@@ -220,7 +221,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* "Explore Artworks" button */
+/* add to cart button */
 #add-to-cart {
     border: 1px solid #000;
     color: #000;
@@ -247,6 +248,109 @@ body {
     border: 1px solid #000;
     transform: scale(1);
 }
+
+/* Media Queries for Tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .artwork {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .artwork img {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+  }
+
+  .details {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: left;
+  }
+
+  .details h1 {
+      font-size: 24px;
+  }
+
+  .price {
+      font-size: 18px;
+  }
+
+  .metadata {
+      font-size: 14px;
+  }
+
+  .buy-button button {
+      width: 150px;
+      height: 45px;
+      font-size: 16px;
+  }
+}
+
+/* Media Queries for Phones (Max-width: 767px) */
+@media (max-width: 767px) {
+  body {
+      margin-top: 50px;
+  }
+
+  .container {
+    margin-top: 50px ;
+    padding: 10px;
+  }
+
+  .breadcrumb {
+      font-size: 12px;
+      text-align: left;
+  }
+
+  .artwork {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .artwork img {
+      width: 100%;
+      max-width: 300px;
+  }
+
+  .details {
+      margin: 0;
+      text-align: center;
+  }
+
+  .details h1 {
+      font-size: 20px;
+  }
+
+  .price {
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  .metadata {
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.4;
+  }
+
+  .description h3 {
+      font-size: 18px;
+  }
+
+  .description p {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+  }
+
+  .buy-button button {
+      width: 100px;
+      height: 40px;
+      font-size: 14px;
+  }
+}
+
 /* ---------- Footer ---------- */
 .footer-container {
     max-width: 1170px;
