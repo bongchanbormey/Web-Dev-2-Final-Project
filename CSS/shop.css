@@ -205,6 +205,9 @@ header {
 
 /* Media Queries for Tablets (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+    main{
+        margin-top: 100px;
+    }
     .search-filter {
         margin-right: 50px;
         margin-top: 50px;
@@ -253,8 +256,10 @@ header {
 
 /* Media Queries for Phones (Max-width: 767px) */
 @media (max-width: 767px) {
-    .search-filter {
+    main{
         margin-top: 100px;
+    }
+    .search-filter {
         margin: 20px 10px;
         flex-direction: column;
         align-items: stretch;
@@ -279,7 +284,7 @@ header {
     }
 
     .artwork-img {
-        height: 180px;
+        height: 250px;
     }
 
     .artwork-card .artwork-name {
