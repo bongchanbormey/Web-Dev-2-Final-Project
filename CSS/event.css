@@ -1,5 +1,5 @@
-/* Import fonts: Libre Carlson, Lato and Raleway  */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Raleway:wght@800&display=swap');
+/* Import fonts: Libre Caslon, Lato, Playfair Display, Roboto, and Raleway  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -121,17 +121,18 @@ header {
 main {
     max-width: 800px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 130px;
     padding: 10px;
     text-align: justify;
     margin-bottom: 5%;
 }
 
 .breadcrumb {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 14px;
     color: #777;
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .breadcrumb a {
@@ -146,12 +147,21 @@ main {
 
 main h1 {
     color:#333;
-    font-family: Libre Caslon;
+    font-family: Playfair Display, sans-serif;
     font-size: 2.5em;
     margin-top: 10px;
     margin-bottom: 0;
     text-align: left; 
     line-height: 1.5;
+}
+
+.place-date{
+    color:#666;
+    font-family: Lato, sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 10px;
 }
 strong{
     color:#555;
@@ -160,8 +170,10 @@ strong{
     margin-bottom: 20px;
 }
 main h3 {
+    margin-top: 30px;
+    font-size: 1.5em;
     color:#333;
-    font-family: Libre Caslon;
+    font-family: Playfair Display, sans-serif;
 }
 
 main img { 
@@ -171,19 +183,12 @@ main img {
     height: 480px;
 }
 
-.date {
-    color: #B4D4FF;
-    font-family: Lato;
-    margin-top: 0;
-    font-size: 0.9em;
-    text-align: left;
-    margin-bottom: 30px;
-}
 
 p {
     color:#666;
-    font-family: Lato;
-    font-size: 0.9em;
+    font-family: Lato, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
     line-height: 1.5;
     margin-top: 10px;
 }

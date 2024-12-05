@@ -1,6 +1,5 @@
-/* Import fonts: Libre Carlson, Lato and Raleway  */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Raleway:wght@800&display=swap');
-
+/* Import fonts: Libre Caslon, Lato, Playfair Display, Roboto, and Raleway  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -134,7 +133,6 @@ body {
 
 /* the photo on the top */
 .header {
-    font-family: Libre Caslon;
     position: relative;
     height: 525px;
     background-image: url('/Assets/event0.png');
@@ -155,7 +153,7 @@ body {
     display: flex;
     max-width: 1200px;
     margin-left: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 /* the 3 nav button */
@@ -171,13 +169,13 @@ body {
 
 /* side button */
 .nav-button {
-    font-family: Raleway;
+    font-family: Roboto, Lato;
     width: 100%;
     padding: 15px;
     padding-left: 30px;
     margin-bottom: 15px;
     font-size: 18px;
-    font-weight: 10;
+    font-weight: 300;
     cursor: pointer;
     background-color: #b4d4ff;
     border: none;
@@ -192,6 +190,7 @@ body {
 
 .main-content {
     width: 200%;
+    margin-bottom: 40px;
 }
 
 .search-filter {
@@ -203,8 +202,9 @@ body {
 
 
 .search-input {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
     margin-left: 0;
-    font-family: lato;
     width: 35%;
     padding: 10px;
     font-size: 16px;
@@ -212,8 +212,9 @@ body {
 
 /* dropdown filter search */
 .filter-dropdown {
-    font-family: lato;
-    width: 15%;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    width: 16%;
     margin-left: 5px;
     padding: 10px;
     font-size: 16px;
@@ -226,6 +227,7 @@ hr{
     color:#797979;
     border: 1%;
 }
+
 .events-list {
     display: flex;
     flex-direction: column;
@@ -243,7 +245,6 @@ hr{
     height: 225px;
     object-fit: cover;
     margin-left:0;
-    /* border-radius: 8px; */
     margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -258,7 +259,7 @@ hr{
 
 .event-info h2 {
     color: #545454;
-    font-family: Libre Caslon;
+    font-family: Playfair Display;
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
@@ -269,7 +270,7 @@ a .title:hover{
 .place-date {
     color: #f6f6f6;
     font-size: 16px;
-    font-weight: 450;
+    font-weight: 350;
     line-height: 30px;
     padding-bottom: 30px;
 }
@@ -279,15 +280,15 @@ a .title:hover{
 }
 
 .content{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     margin-bottom: 15px;
 }
 
 /* view detail */
 .view-detail {
-    font-family: lato;
-    font-weight: 575;
+    font-family: lato, sans-serif;
+    font-weight: 400;
     margin-top: 20px;
     color: #000;
     border: none;
