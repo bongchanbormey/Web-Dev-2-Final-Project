@@ -1,6 +1,5 @@
-/* Import fonts: Libre Carlson, Lato and Raleway  */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Raleway:wght@800&display=swap');
-
+/* Import fonts: Libre Caslon, Lato, Playfair Display, Roboto, and Raleway  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -121,8 +120,9 @@ header {
 /* ---------- End of Navigation Bar ---------- */
 
 /* -----------Main Section----------- */
+
 body {
-    margin-top: 100px;
+    /* margin-top: 150px; */
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
@@ -132,6 +132,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 90px;
   }
 
   .breadcrumb {
@@ -160,7 +162,6 @@ body {
     width: 500px;
     max-width: 100%;
     border: 1px solid #ddd;
-    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
@@ -170,7 +171,7 @@ body {
   }
 
   .details h1 {
-    font-family: Libre Carlson;
+    font-family: Playfair Display, sans-serif;
     font-size: 28px;
     margin-bottom: 10px;
   }
@@ -184,7 +185,7 @@ body {
 
   .metadata {
     margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 1.7;
   }
 
   .metadata div {
@@ -200,12 +201,13 @@ body {
   }
 
   .description h3{
-    font-family: Libre Carlson;
+    font-family: Playfair Display, sans-serif;
     margin-bottom: 20px;
   }
 
 .description p{
-    font-family: Lato;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
     font-size: 1em;
     line-height: 25px;
     margin-bottom: 30px;
@@ -223,6 +225,7 @@ body {
 
 /* add to cart button */
 #add-to-cart {
+    margin-right: 20px;
     border: 1px solid #000;
     color: #000;
     background-color: #b4d4ff;
