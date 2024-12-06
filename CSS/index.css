@@ -192,8 +192,8 @@ header {
 
 #explore-button:hover {
     background-color: #000;
-    color: white;
-    border: 1px solid white;
+    color: #b4d4ff;
+    border: 1px solid #b4d4ff;
     transform: scale(1);
 }
 
@@ -205,7 +205,7 @@ header {
 }
 
 #start-button:hover {
-    background-color: #b4d4ff;
+    background-color: #fff;
     color: black;
     border: 1px solid #000;
     transform: scale(1);
@@ -394,6 +394,19 @@ header {
     width: auto;
 }
 
+/* Animation */
+.scroll-animation.artist-spotlight {
+    opacity: 0;
+    transform: scale(0.8) rotate(-5deg);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animation.artist-spotlight.active {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+
+
 /* ---------- Responsiveness ---------- */
 @media (max-width: 768px) {
     .artist-row {
@@ -553,10 +566,24 @@ header {
 
 .continue-reading-button:hover {
     background-color: #000;
-    color: white;
-    border: 1px solid white;
+    color: #b4d4ff;
+    border: 1px solid #b4d4ff;
     transform: scale(1);
 }
+
+/* ---------- Scroll Animation ---------- */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animation.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 
 /* ---------- Responsiveness ---------- */
@@ -645,7 +672,7 @@ header {
     font-family: Roboto, Lato;
     color: white;
     background-color: #000;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
@@ -821,3 +848,25 @@ ul {
 }
 }
 /* ---------- End of Footer ---------- */
+
+
+/* ---------- Scroll-to-top Button ----------*/
+.scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #b4d4ff;
+    color: black;
+    padding: 10px 12px;
+    font-size: 18px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+  
+.scrollToTop:hover {
+    background-color: #2b2e34;
+    color: #fff;
+}
+/* ---------- Scroll-to-top Button ----------*/
