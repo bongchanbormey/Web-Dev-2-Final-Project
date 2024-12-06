@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Lato;
+    text-decoration: none;
 }
 
 body {
@@ -84,57 +85,73 @@ body {
     color: #fff;
 }
 
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 40px;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 20px;
-    margin-left: 280px;
-    margin-bottom: 50px;
+.artwork-list {
+    flex: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+   
+}
+/* unordered list */
+.artworks {
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    
 }
 
-.gallery-item {
-    background-color: #fff;
+.artwork-card {
+    box-sizing: border-box;
+    width: 22%;   
+    background-color: white;
+    padding: 17px;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    height: 350px;
-    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+    
 }
 
-.gallery-item img {
-    width: 100%;
-    height: 60%; /* Adjusted height to fit button */
-    object-fit: cover;
+.artwork-card:hover {
+    transform: scale(1.04);
 }
 
-.gallery-info {
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #eee;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.artwork-img {
+    width: 100%; 
+    height: 270px; 
+    margin-bottom: 15px;
 }
 
-.gallery-info h3 {
-    font-size: 18px;
-    margin: 5px 0;
+.artwork-card .artwork-name {
+    font-family: Playfair Display, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #000; 
 }
 
-.gallery-info p {
-    font-size: 16px;
-    color: #777;
-    margin: 5px 0;
+.artwork-card .category {
+    font-family: Lato, sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #000; 
+    margin: 10px 0 10px ;
+}
+.artwork-card .artist-name {
+    font-family: Lato, sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #000; 
+    margin: 10px 0 10px ;
+}
+
+.artwork-card .price{
+    font-size: 1.03em;
+    font-weight: 400;
+    color: #000; 
 }
 
 .view-button {
@@ -375,6 +392,7 @@ header {
     padding: 10px 20px;
     font-weight: 370;
     transition: all .42s ease;
+    text-decoration: none;
 }
 
 .navmenu a:hover {
