@@ -298,7 +298,6 @@ header {
     padding-left: 7%; 
     padding-right: 7%;
     padding-bottom: 7%;
-    margin-top: 10px;
     background-color: #fff; 
 }
 
@@ -584,8 +583,6 @@ header {
 }
 
 
-
-
 /* ---------- Responsiveness ---------- */
 @media (max-width: 768px) {
     .who-we-are h2 {
@@ -644,7 +641,7 @@ header {
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 20px;
+    padding: 25px;
     width: calc(50% - 20px);
     text-align: left;
     display: flex;
@@ -680,18 +677,20 @@ header {
     font-family: 'Lato', sans-serif;
     line-height: 1.8;
     color: #555;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 .view-event-button {
-    font-size: 1em;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    font-family: Roboto, Lato;
+    width: 550px;
     padding: 10px 20px;
-    background-color: #b4d4ff;
+    background-color: #fff;
     color: #000;
-    border: 1px solid #000;
+    border: 1px solid #ababab;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -703,11 +702,13 @@ header {
 }
 
 .view-more-button {
-    font-size: 1.2em;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: Roboto, Lato;
     padding: 15px 30px;
-    background-color: #b4d4ff;
+    width: 20%;
+    background-color: #fff;
     color: #000;
     border: 1px solid #000;
     cursor: pointer;
@@ -721,17 +722,70 @@ header {
 }
 
 
+/* Responsiveness */
 
+@media (max-width: 768px) {
+    .explore-events h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
 
+    .events-container {
+        gap: 20px;
+        justify-content: center;
+    }
 
+    .event-box {
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+        padding: 15px;
+    }
 
+    .view-event-button {
+        width: 100%;
+        font-size: 1em;
+    }
 
+    .view-more-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1em;
+    }
+}
 
+@media (max-width: 480px) {
+    .explore-events h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
 
+    .events-container {
+        gap: 15px;
+    }
 
+    .event-box {
+        width: 100%;
+        padding: 10px;
+    }
 
+    .event-title {
+        font-size: 1.1em;
+    }
 
+    .event-description {
+        font-size: 0.8em;
+    }
 
+    .view-event-button {
+        font-size: 1em;
+    }
+
+    .view-more-button {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+}
+/* ---------- End of Events Section ---------- */
 
 
 /* ---------- Newsletter Subscription ---------- */
