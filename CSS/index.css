@@ -294,6 +294,14 @@ header {
     color: #000; 
 }
 
+.browse-artworks {
+    padding-left: 7%; 
+    padding-right: 7%;
+    padding-bottom: 7%;
+    margin-top: 10px;
+    background-color: #fff; 
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
     .artwork-card {
