@@ -1,5 +1,6 @@
 /* Import fonts: Libre Caslon, Lato, Playfair Display, Roboto, and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -116,16 +117,10 @@ header {
     transform: scale(1);
     color: #b4d4ff; 
 }
-
 /* ---------- End of Navigation Bar ---------- */
 
-/* ---Main Content--- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+/* ---Main Content--- */
 body {
     display: flex;
     flex-direction: column;
@@ -139,7 +134,6 @@ body {
     background-image: url('/Assets/shop0.jpg');
     background-size: cover;
 }
-
 
 .overlay {
     position: absolute;
@@ -242,7 +236,7 @@ body {
     font-size: 1.03em;
     font-weight: 400;
     color: #000; 
-}
+} */
 
 /* Media Queries for Tablets (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {

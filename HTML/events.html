@@ -1,168 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artist</title>
-    <link rel="stylesheet" href="/CSS/events.css">
-    <script src="/Javascript/events.js" defer></script>
-</head>
-<body>   
-    <!-- Navigation Bar -->
-<header>
-    <a href="/HTML/index.html" class="logo"><img src="/Assets/Selapak Logo.png" alt="Selapak Logo"></a>
-    <ul class="navmenu">
-        <li><a href="/HTML/index.html">Home</a></li>
-        <li><a href="/HTML/shop.html">Shop</a></li>
-        <li><a href="/HTML/events.html">Events</a></li>
-        <li><a href="/HTML/Artist.html">Artists</a></li>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selapak - Home</title>
+        <link rel="stylesheet" href="/CSS/events.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Raleway:wght@800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    </ul>
-    
-    <div class="nav-icon">
-        <a href="/HTML/shop.html" type="_blank"><i class="bx bx-search" id="individual-nav-icon"></i></a>
-        <a href="/HTML/user_profile.html" type="_blank"><i class="bx bx-user" id="individual-nav-icon"></i></a>
-        <a href="/HTML/add_to_cart.html" type="_blank"><i class="bx bx-cart" id="individual-nav-icon"></i></a>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <script defer src="/JavaScript/nav-dropdown.js"></script>
+        <script src="/Javascript/events.js" defer></script>
+    </head>
+
         
-        <div class="bx bx-menu" id="menu-icon">
-            <div class="dropdown-content" id="dropdown-menu">
-                <a href="/HTML/index.html">Home</a>
-                <a href="/HTML/shop.html">Shop</a>
-                <a href="/HTML/events.html">Events</a>
-                <a href="/HTML/Artist.html">Artists</a>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- End of Navigation Bar -->
-
-
-<!-- Main Content -->
-<div class="header">
-    <div class="overlay"></div>
-</div>
-    <div class="container">
-        <aside class="sidebar">
-            <button class="nav-button">Events</button>
-            <button class="nav-button">Venue Rental</button>
-            <button class="nav-button">Calendar</button>
-        </aside>
-        <main class="main-content">
-            <div class="search-filter">
-                <input type="text" placeholder="Search for event" class="search-input">
-                <select class="filter-dropdown">
-                    <option>Newest first</option>
-                    <option>Oldest first</option>
-                </select>
-            </div>
-            <div class="events-list">
-                <hr>
-                <div class="event-card">
-                    <a href='/HTML/event1.html'><img src="/Assets/event1.jpg" alt="Exhibition Photo"></a>
-                    <div class="event-info">
-                        <a href='/HTML/event1.html'><h2 class="title">From Funan to Present • Exhibition</h2></a>
-                        <div class="place-date">
-                            <p>SOSORO Museum, Phnom Penh, Cambodia</p>
-                            <p>Open from Tuesday to Sunday, 9am - 6pm</p>
-                        </div>
-                        <p class="content">This permanent exhibition highlights some fundamental facts and lessons learned from the country's economic and monetary history...</p>
-                        <br>
-                        <hr>
-                        <a href='/HTML/event1.html'><p class="view-detail">View Event Details</p></a>
-                    </div>
-                </div>
-                <hr>
-
-                <div class="event-card">
-                    <a href='/HTML/event2.html'><img src="/Assets/event2.png" alt="Exhibition Photo"></a>
-                    <div class="event-info">
-                        <a href='/HTML/event2.html'><h2 class="title">The Journey of King Sisowath • Exhibition</h2></a>
-                        <div class="place-date">
-                            <p>SOSORO Museum, Phnom Penh, Cambodia</p>
-                            <p>Open from Tuesday to Sunday, 9am - 6pm</p>
-                        </div>
-                        <p class="content">Embark along with King Sisowath on his historical journey to France in 1906 with this 360° immersive virtual experience! Navigate through the ...</p>
-                        <br>
-                        <hr>
-                        <a href='/HTML/event2.html'><p class="view-detail">View Event Details</p><a href='/HTML/event2.html'></a>
-                    </div>
-                </div>
-                <hr>
-                <div class="event-card">
-                    <a href='/HTML/event3.html'><img src="/Assets/event3.jpg" alt="Learn and Play Space"></a>
-                    <div class="event-info">
-                        <a href='/HTML/event3.html'><h2 class="title">Learn and Play • Interactive Space</h2></a>
-                        <div class="place-date">
-                            <p>SOSORO Museum</p>
-                            <p>Open from Tuesday to Sunday, 9am - 6pm</p>
-                        </div>
-                        <p class="content">The SOSORO Museum, with its modern interior, is equipped with interactive components such as audiovisual documentaries, video games ...</p>
-                        <br>
-                        <hr>
-                        <a href='/HTML/event3.html'><p class="view-detail">View Event Details</p></a>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-
-
-<!--  End of main content -->
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="row">
-            <div class="footer-col">
-                <h4>About Us</h4>
-                <ul>
-                    <li><a href="#">About Selapak</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Get Help</h4>
-                <ul>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="/HTML/index.html">Home</a></li>
-                    <li><a href="/HTML/shop.html">Shop</a></li>
-                    <li><a href="/HTML/events.html">Events</a></li>
-                    <li><a href="/HTML/Artist.html">Artists</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#https://www.aupp.edu.kh/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#https://www.aupp.edu.kh/"><i class="fab fa-twitter"></i></a>
-                    <a href="#https://www.aupp.edu.kh/"><i class="fab fa-instagram"></i></a>
-                    <a href="#https://www.aupp.edu.kh/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-
-                <div class="copyright">
-                    <p>&copy; Selapak <span id="currentYear"></span>. All Rights Reserved.</p>
-                </div>
+    <body>   
+        <!-- Navigation Bar -->
+        <header>
+            <a href="/HTML/index.html" class="logo"><img src="/Assets/Selapak Logo.png" alt="Selapak Logo"></a>
+            <ul class="navmenu">
+                <li><a href="/HTML/index.html">Home</a></li>
+                <li><a href="/HTML/shop.html">Shop</a></li>
+                <li><a href="/HTML/events.html">Events</a></li>
+                <li><a href="/HTML/Artist.html">Artists</a></li>
+                <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+                <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            </ul>
+            
+            <div class="nav-icon">
+                <a href="/HTML/shop.html" type="_blank"><i class="bx bx-search" id="individual-nav-icon"></i></a>
+                <a href="/HTML/user_profile.html" type="_blank"><i class="bx bx-user" id="individual-nav-icon"></i></a>
+                <a href="/HTML/add_to_cart.html" type="_blank"><i class="bx bx-cart" id="individual-nav-icon"></i></a>
                 
+                <div class="bx bx-menu" id="menu-icon">
+                    <div class="dropdown-content" id="dropdown-menu">
+                        <a href="/HTML/index.html">Home</a>
+                        <a href="/HTML/shop.html">Shop</a>
+                        <a href="/HTML/events.html">Events</a>
+                        <a href="/HTML/Artist.html">Artists</a>
+                    </div>
+                </div>
             </div>
+        </header>
+        <!-- End of Navigation Bar -->
 
+
+        <!-- Main Content -->
+        <div class="header">
+            <div class="overlay"></div>
         </div>
-    </div>
-</footer>
-<!-- End of Footer -->
-</body>
+
+        <div class="container">
+            <aside class="sidebar">
+                <button class="nav-button">Events</button>
+                <button class="nav-button">Venue Rental</button>
+                <button class="nav-button">Calendar</button>
+            </aside>
+            <main class="main-content">
+                <div class="search-filter">
+                    <input type="text" placeholder="Search for event" class="search-input">
+                    <select class="filter-dropdown">
+                        <option>Newest first</option>
+                        <option>Oldest first</option>
+                    </select>
+                </div>
+
+                <div class="events-list">
+                    <hr>
+                    <!-- Event 1 -->
+                    <div class="event-card">
+                        <a href='/HTML/event1.html'><img src="/Assets/event1.jpg" alt="Exhibition Photo"></a>
+                        <div class="event-info">
+                            <a href='/HTML/event1.html'><h2 class="title">From Funan to Present • Exhibition</h2></a>
+                            <div class="place-date">
+                                <p>SOSORO Museum, Phnom Penh, Cambodia</p>
+                                <p>Open from Tuesday to Sunday, 9am - 6pm</p>
+                            </div>
+                            <p class="content">This permanent exhibition highlights some fundamental facts and lessons learned from the country's economic and monetary history...</p>
+                            <br>
+                            <hr>
+                            <a href='/HTML/event1.html'><p class="view-detail">View Event Details</p></a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Event 2 -->
+                    <div class="event-card">
+                        <a href='/HTML/event2.html'><img src="/Assets/event2.png" alt="Exhibition Photo"></a>
+                        <div class="event-info">
+                            <a href='/HTML/event2.html'><h2 class="title">The Journey of King Sisowath • Exhibition</h2></a>
+                            <div class="place-date">
+                                <p>SOSORO Museum, Phnom Penh, Cambodia</p>
+                                <p>Open from Tuesday to Sunday, 9am - 6pm</p>
+                            </div>
+                            <p class="content">Embark along with King Sisowath on his historical journey to France in 1906 with this 360° immersive virtual experience! Navigate through the ...</p>
+                            <br>
+                            <hr>
+                            <a href='/HTML/event2.html'><p class="view-detail">View Event Details</p><a href='/HTML/event2.html'></a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Event 3 -->
+                    <div class="event-card">
+                        <a href='/HTML/event3.html'><img src="/Assets/event3.jpg" alt="Learn and Play Space"></a>
+                        <div class="event-info">
+                            <a href='/HTML/event3.html'><h2 class="title">Learn and Play • Interactive Space</h2></a>
+                            <div class="place-date">
+                                <p>SOSORO Museum</p>
+                                <p>Open from Tuesday to Sunday, 9am - 6pm</p>
+                            </div>
+                            <p class="content">The SOSORO Museum, with its modern interior, is equipped with interactive components such as audiovisual documentaries, video games ...</p>
+                            <br>
+                            <hr>
+                            <a href='/HTML/event3.html'><p class="view-detail">View Event Details</p></a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Event 4 -->
+                    <div class="event-card">
+                        <a href='/HTML/event4.html'><img src="/Assets/Traditional Dance.png" alt="A Journey Through Time"></a>
+                        <div class="event-info">
+                            <a href='/HTML/event3.html'><h2 class="title">A Journey Through Time</h2></a>
+                            <div class="place-date">
+                                <p>Sisowath Musical Theater - Phnom Penh, Cambodia</p>
+                                <p>Open on Sunday, 5pm - 9pm</p>
+                            </div>
+                            <p class="content">Experience the captivating world of Traditional Khmer Performance, where ancient music,
+                                elegant dances, and enchanting storytelling bring Cambodia’s rich cultural...</p>
+                            <br>
+                            <hr>
+                            <a href='/HTML/event3.html'><p class="view-detail">View Event Details</p></a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Event 5 -->
+                    <div class="event-card">
+                        <a href='/HTML/event5.html'><img src="/Assets/Malay Art Exhibit.png" alt="Beyond Borders"></a>
+                        <div class="event-info">
+                            <a href='/HTML/event3.html'><h2 class="title">Beyond Borders</h2></a>
+                            <div class="place-date">
+                                <p>SOSORO Museum</p>
+                                <p>Open from Tuesday to Sunday, 9am - 6pm</p>
+                            </div>
+                            <p class="content">Discover the visionary works of a celebrated Malaysian artist in Beyond Borders, an exhibition 
+                                that transcends boundaries and cultures through captivating art...</p>
+                            <br>
+                            <hr>
+                            <a href='/HTML/event3.html'><p class="view-detail">View Event Details</p></a>
+                        </div>
+                    </div>
+                    <hr>
+
+                </div>
+            </main>
+        </div>
+        <!--  End of main content -->
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">About Selapak</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="/HTML/index.html">Home</a></li>
+                            <li><a href="/HTML/shop.html">Shop</a></li>
+                            <li><a href="/HTML/events.html">Events</a></li>
+                            <li><a href="/HTML/Artist.html">Artists</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#https://www.aupp.edu.kh/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#https://www.aupp.edu.kh/"><i class="fab fa-twitter"></i></a>
+                            <a href="#https://www.aupp.edu.kh/"><i class="fab fa-instagram"></i></a>
+                            <a href="#https://www.aupp.edu.kh/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                        <div class="copyright">
+                            <p>&copy; Selapak <span id="currentYear"></span>. All Rights Reserved.</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </body>
 </html>

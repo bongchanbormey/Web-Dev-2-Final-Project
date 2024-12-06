@@ -1,5 +1,6 @@
 /* Import fonts: Libre Caslon, Lato, Playfair Display, Roboto, and Raleway  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@ body {
 main {
     flex: 1;
 } 
+
 
 /* ---------- Navigation Bar ---------- */
 header {
@@ -116,8 +118,8 @@ header {
     transform: scale(1);
     color: #b4d4ff; 
 }
-
 /* ---------- End of Navigation Bar ---------- */
+
 
 * {
     margin: 0;
@@ -139,7 +141,6 @@ body {
     background-size: cover;
     background-position: center bottom;
 }
-
 
 .overlay {
     position: absolute;
@@ -174,13 +175,14 @@ body {
     padding: 15px;
     padding-left: 30px;
     margin-bottom: 15px;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 17px;
+    font-weight: 500;
     cursor: pointer;
     background-color: #b4d4ff;
     border: none;
     color: #333;
     text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .nav-button:hover {
@@ -199,7 +201,6 @@ body {
     margin-bottom: 40px;
     margin-top: 40px;
 }
-
 
 .search-input {
     font-family: Lato, sans-serif;
@@ -221,11 +222,8 @@ body {
 }
 
 /* line */
-hr{
-    border-color: #797979;
-    background-color:#797979;
-    color:#797979;
-    border: 1%;
+hr {
+    border: 0.5px solid #797979;
 }
 
 .events-list {
@@ -248,6 +246,17 @@ hr{
     margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.event-card {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover img {
+    transform: scale(1.03); 
 }
 
 .event-info {
@@ -263,7 +272,8 @@ hr{
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
-a .title:hover{
+
+a .title:hover {
     color: #000000;
 }
 
@@ -413,37 +423,37 @@ a .view-detail:hover{
 .footer-container {
     max-width: 1170px;
     margin:auto;
-   }
+}
    
-   .row {
+.row {
     display: flex;
     flex-wrap: wrap;
-   }
-   
-   ul {
+}
+
+ul {
     list-style: none;
-   }
-   
-   .footer {
+}
+
+.footer {
     background-color: black;
-       padding: 70px 0;
-   }
-   
-   .footer-col{
-      width: 25%;
-      padding: 0 15px;
-   }
-   
-   .footer-col h4{
+    padding: 70px 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4  {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
-   }
-   
-   .footer-col h4::before{
+}
+
+.footer-col h4::before {
     content: '';
     position: absolute;
     left:0;
@@ -452,13 +462,13 @@ a .view-detail:hover{
     height: 2px;
     box-sizing: border-box;
     width: 50px;
-   }
-   
-   .footer-col ul li:not(:last-child){
+}
+
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
-   }
-   
-   .footer-col ul li a{
+}
+
+.footer-col ul li a {
     font-size: 17px;
     text-transform: capitalize;
     color: #ffffff;
@@ -467,14 +477,14 @@ a .view-detail:hover{
     color: #cccccc;
     display: block;
     transition: all 0.3s ease;
-   }
-   
-   .footer-col ul li a:hover{
+}
+
+.footer-col ul li a:hover {
     color: #ffffff;
     padding-left: 8px;
-   }
-   
-   .footer-col .social-links a{
+}
+
+.footer-col .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -485,34 +495,35 @@ a .view-detail:hover{
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
-   }
-   
-   .footer-col .social-links a:hover{
+}
+
+.footer-col .social-links a:hover {
     color: #2b2e34;
     background-color: #b4d4ff;
-   }
-   
-   .copyright { 
-       color: white;
-       font-family: Raleway;
-       font-size: 16px;
-       font-weight: 300;
-       margin-top: 20px;
-   }
-   
-   /*responsive*/
-   @media(max-width: 767px){
-     .footer-col{
-       width: 50%;
-       margin-bottom: 30px;
-   }
-   }
-   @media(max-width: 574px){
-     .footer-col{
-       width: 100%;
-   }
-   }
-   /* ---------- End of Footer ---------- */
-   
+}
+
+.copyright { 
+    color: white;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 574px) {
+    .footer-col{
+    width: 100%;
+}
+}
+/* ---------- End of Footer ---------- */
+
    
    
