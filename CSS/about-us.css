@@ -1,0 +1,434 @@
+/* Import fonts: Libre Caslon, Lato, Playfair Display, Roboto, and Raleway  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Lato;
+    list-style: none;
+    text-decoration: none; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+main {
+    flex: 1;
+} 
+
+
+/* ---------- Navigation Bar ---------- */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 370;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover {
+    color: #b4d4ff;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+#individual-nav-icon:hover {
+    transform: scale(1);
+    color: #b4d4ff; 
+}
+
+.nav-icon i {
+    margin-right: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+    transition: all .42s ease;
+}
+
+#menu-icon {
+    font-size: 32px;
+    color: #ffffff;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+/* Show dropdown only when clicking over the menu icon */
+#menu-icon:hover + .dropdown-content {
+    display: block;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;     /* Initially hidden */
+    font-size: 16px;
+    padding: 5px;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 100px;
+    border: 1px solid #ddd;
+    z-index: 1;
+    top: 100%;         /* Position it directly below the menu icon */
+    left: 0;           /* Align with menu icon */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ededed; 
+}
+
+#menu-icon:hover {
+    transform: scale(1);
+    color: #b4d4ff; 
+}
+/* ---------- End of Navigation Bar ---------- */
+
+
+/* ---------- Members Info ---------- */
+.our-team {
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-start;
+    height: 87vh;
+    box-sizing: border-box;
+    max-width: 100%;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.meet-our-team {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50vh;
+    padding-bottom: 30px;
+    background: linear-gradient(to bottom, rgb(5, 0, 27), rgb(4, 0, 47), rgb(13, 0, 77));
+}
+
+.meet-our-team h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Playfair Display, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+
+.member-container {
+    max-width: 100%;
+    width: 75%;
+    height: 90%;
+    display: flex;
+    gap: 0;
+    justify-content: space-evenly;
+    padding: 0 50px;
+    margin-top: 60px;
+    margin-inline: auto;
+}
+
+.member-container > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 450px;
+    transition: transform 0.3s ease;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgb(175, 174, 174);
+}
+
+.member-container > *:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid rgb(13, 0, 77);
+}
+
+.member-container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px rgb(156, 156, 156);
+}
+
+.member-container h4 {
+    color: #46464d;
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.member-container p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Lato, sans-serif;
+}
+
+.member-container #border {
+    width: 120px;
+    height: 4px;
+    background-color: #b4d4ff;
+    margin-bottom: 20px;
+}
+
+.extra-bottom {
+    margin-bottom: 8px;
+}
+
+.media-logo > * {
+    color: rgb(13, 0, 77);
+    margin-right: 12px;
+}
+
+.media-logo {
+    font-size: 1.5rem;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+/* Responsiveness */
+/* For tablets (screen width: 768px - 1024px) */
+@media (max-width: 1024px) {
+    .our-team {
+        flex-direction: column; 
+        gap: 30px; 
+        justify-content: center;
+        height: auto; 
+    }
+
+    .member-container {
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    .member-container img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .member-container h4 {
+        font-size: 1.1rem;
+    }
+
+    .member-container p {
+        font-size: 0.9rem;
+    }
+
+    .media-logo {
+        font-size: 1.2rem;
+    }
+}
+
+/* For mobile (screen width: 480px - 767px) */
+@media (max-width: 767px) {
+    .our-team {
+        flex-direction: column; 
+        gap: 20px; 
+        justify-content: center;
+        height: auto;
+    }
+
+    .member-container {
+        width: 90%; 
+        margin-inline: auto;
+    }
+
+    .member-container img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .member-container h4 {
+        font-size: 1rem;
+    }
+
+    .member-container p {
+        font-size: 0.85rem;
+    }
+
+    .media-logo {
+        font-size: 1.5rem;
+    }
+}
+
+/* For small mobile (screen width: below 480px) */
+@media (max-width: 480px) {
+    .our-team {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .member-container {
+        width: 100%; 
+        margin-inline: auto;
+    }
+
+    .member-container img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .member-container h4 {
+        font-size: 0.9rem;
+    }
+
+    .member-container p {
+        font-size: 0.75rem;
+    }
+
+    .media-logo {
+        font-size: 1rem;
+    }
+}
+/*---------- End of Members Info ----------*/
+
+
+/* ---------- Footer ---------- */
+.footer-container {
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: black;
+    padding: 70px 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #b4d4ff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 17px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 350;
+	color: #cccccc;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #2b2e34;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #2b2e34;
+	background-color: #b4d4ff;
+}
+
+.copyright { 
+    color: white;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* ---------- End of Footer ---------- */
