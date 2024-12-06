@@ -617,6 +617,123 @@ header {
 /* ---------- End of Who We Are ---------- */
 
 
+/* ---------- Explore Events Section ---------- */
+.explore-events {
+    padding: 7%;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.explore-events h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.event-box {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.event-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.event-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.event-description {
+    font-size: 0.9em;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.view-event-button {
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    background-color: #b4d4ff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.view-event-button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.view-more-button {
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 30px;
+    background-color: #b4d4ff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.view-more-button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------- Newsletter Subscription ---------- */
 .newsletter {
     padding: 7%;
