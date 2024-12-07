@@ -4,8 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Selapak - Artists</title>
-        <link rel="stylesheet" href="/CSS/artists.css">
+        <title>Selapak - Home</title>
+        <link rel="stylesheet" href="/CSS/artist1.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Raleway:wght@800&display=swap" rel="stylesheet">
@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <script defer src="/JavaScript/nav-dropdown.js"></script>
-        <script src="/Javascript/Artist.js" defer></script>
     </head>
 
 
@@ -51,88 +50,68 @@
         <!-- End of Navigation Bar -->
 
 
-        <!-- Cover Pic & Artists Display -->
-        <img id="banner" src="/Assets/Banner.jpg"alt="Banner">
-
-        <!-- Category -->
-        <div class="container">
-            <input type="text" id="artist-input" placeholder="Enter artist name">
-            <select id="category-select">
-                <option value="" disabled selected>By category</option>
-                <option value="all">All</option>
-                <option value="painters">Painters</option>
-                <option value="sculptors">Sculptors</option>
-                <option value="photographers">Photographers</option>
-                <option value="illustrators">Illustrators</option>
-                <option value="printmakers">Printmakers</option>
-                <option value="mixed-media">Mixed media artists</option>
-            </select>
-        </div>
-
-        <!-- Gallery Row 1-->
-        <div class="gallery-container">
-            <div class="artist-card" data-category="painters" data-category="all">
-                <a href="artist1-sothy-chim.html">
-                    <img src="/Assets/image1.jpg" alt="Sothy Chim">
-                    <div class="artist-name">Sothy Chim</div>
-                </a>
+        <!-- Artist Info -->
+        <div class="spotlight-container">
+            <div class="artist-image">
+              <img src="/Assets/image5.jpg" alt="Cheanick Nov">
             </div>
 
-            <div class="artist-card" data-category="painters" data-category="all">
-                <a href="/HTML/artist2-dina-chan.html">
-                    <img src="/Assets/image4.jpg" alt="Dina Chhan">
-                    <div class="artist-name">Dina Chhan</div>
-                </a>
-            </div>
-
-            <div class="artist-card" data-category="photographers" data-category="all">
-                <a href="/HTML/artist3-kolkateka.html">
-                    <img src="/Assets/image3.jpg" alt="Khun Kolkateka">
-                    <div class="artist-name">Khun Kolkateka</div>
-                </a>
-            </div>
-
-            <div class="artist-card" data-category="sculptors" data-category="all">
-                <a href="/HTML/artist4-nak-noy.html">
-                    <img src="/Assets/image2.jpg" alt="Nak Noy">
-                    <div class="artist-name">Nak Noy</div>
-                </a>
+            <!-- Artist Bio -->
+            <div class="artist-info">
+                <div class="spotlight-label">Artist Spotlight</div>
+                <div class="artist-details">
+                    <h2>Cheanick Nov</h2>
+                    <p class="artist-description">
+                        Cheanick Nov is a gifted painter from Battambang, Cambodia, known for his evocative 
+                        landscapes and striking portraits. Growing up surrounded by the rich cultural heritage 
+                        of his hometown, he draws inspiration from both the natural beauty of the Cambodian 
+                        countryside and the stories of its people.
+                    </p>
+                    <p class="artist-description">
+                        Cheanick’s art often explores themes of identity and memory, using bold colors and 
+                        expressive brushstrokes to convey emotion and depth. With a keen eye for detail, he 
+                        invites viewers to experience the essence of Cambodian life through his unique artistic vision.
+                    </p>
+                </div>
+                <a href="Artist.html" class="view-all-button">View All</a>
             </div>
         </div>
 
-        <!-- Gallery Row 2 -->
-        <div class="gallery-container2">
-            <div class="artist-card" data-category="photographers" data-category="all">
-                <a href="/HTML/artist5-cheanick.html">
-                    <img src="/Assets/image5.jpg" alt="Cheanick Nov">
-                    <div class="artist-name">Cheanick Nov</div>
-                </a>
-            </div>
+        <!-- Artist's Artworks -->
+        <section class="artwork-list">
+            <ul class="artworks">
+                <li class ="artwork-card"><a href="/HTML/product_details.html">
+                    <img class="artwork-img" src="/Assets/featured-art1.jpg" alt="Godkiller">
+                    <p class="artwork-name">PhnomPenh 2077 </p>
+                    <p class="category">Poster</p>
+                    <p class="artist-name">by Menglong</p>
+                    <p class="price">$230</p></a></li>
+        
+                <li class ="artwork-card"><a href="/HTML/product_details.html">
+                    <img class="artwork-img" src="/Assets/featured-art2.jpg" alt="Godkiller">
+                    <p class="artwork-name">Angkor Wat</p>
+                    <p class="category">Illustration Art Print</p>
+                    <p class="artist-name">by Chov Theanly</p>
+                    <p class="price">$360</p></a></li>
+                    
+                <li class ="artwork-card"><a href="/HTML/product_details.html">
+                    <img class="artwork-img" src="/Assets/featured-art3.jpeg" alt="Godkiller">
+                    <p class="artwork-name">Blessing Apsara</p>
+                    <p class="category">Oil on Canvas</p>
+                    <p class="artist-name">by Menglong</p>
+                    <p class="price">$1600</p></a></li>
+                    
+                <li class ="artwork-card"><a href="/HTML/product_details.html">
+                    <img class="artwork-img" src="/Assets/featured-art4.jpg" alt="Godkiller">
+                    <p class="artwork-name">Pithi Srang Preah</p>
+                    <p class="category">Digital Print</p>
+                    <p class="artist-name">by Menglong</p>
+                    <p class="price">$700</p></a></li>
+            </ul>
+        </section>
+        <!-- End of Artist Info -->
 
-            <div class="artist-card" data-category="painters" data-category="all">
-                <a href="/HTML/artist6-vutha-tor.html">
-                    <img src="/Assets/image6.jpg" alt="Vutha Tor">
-                    <div class="artist-name">Vutha Tor</div>
-                </a>
-            </div>
-
-            <div class="artist-card" data-category="painters" data-category="all">
-                <a href="/HTML/artist7-sareth-svay.html">
-                    <img src="/Assets/image7.jpg" alt="Sareth Svay">
-                    <div class="artist-name">Sareth Svay</div>
-                </a>
-            </div>
-
-            <div class="artist-card" data-category="illustrators" data-category="all">
-                <a href="/HTML/artist7-sareth-svay.html">
-                    <img src="/Assets/image8.jpg" alt="Chov Theanly">
-                    <div class="artist-name">Chov Theanly</div>
-                </a>
-            </div>
-        </div>
-        <!-- End of Gallery -->
-
-
+        
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-container">
@@ -184,7 +163,7 @@
             </div>
         </footer>
         <!-- End of Footer -->
-        
+
 
     </body>
 </html>

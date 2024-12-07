@@ -4,8 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Selapak - Artists</title>
-        <link rel="stylesheet" href="/CSS/artists.css">
+        <title>Selapak - Home</title>
+        <link rel="stylesheet" href="/CSS/artist1.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Raleway:wght@800&display=swap" rel="stylesheet">
@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <script defer src="/JavaScript/nav-dropdown.js"></script>
-        <script src="/Javascript/Artist.js" defer></script>
     </head>
 
 
@@ -51,86 +50,66 @@
         <!-- End of Navigation Bar -->
 
 
-        <!-- Cover Pic & Artists Display -->
-        <img id="banner" src="/Assets/Banner.jpg"alt="Banner">
-
-        <!-- Category -->
-        <div class="container">
-            <input type="text" id="artist-input" placeholder="Enter artist name">
-            <select id="category-select">
-                <option value="" disabled selected>By category</option>
-                <option value="all">All</option>
-                <option value="painters">Painters</option>
-                <option value="sculptors">Sculptors</option>
-                <option value="photographers">Photographers</option>
-                <option value="illustrators">Illustrators</option>
-                <option value="printmakers">Printmakers</option>
-                <option value="mixed-media">Mixed media artists</option>
-            </select>
-        </div>
-
-        <!-- Gallery Row 1-->
-        <div class="gallery-container">
-            <div class="artist-card" data-category="painters" data-category="all">
-                <a href="artist1-sothy-chim.html">
-                    <img src="/Assets/image1.jpg" alt="Sothy Chim">
-                    <div class="artist-name">Sothy Chim</div>
-                </a>
+        <!-- Artist Info -->
+        <div class="spotlight-container">
+            <!-- Artist Bio -->
+            <div class="artist-image">
+                <img src="/Assets/image1.jpg" alt="Sothy Chim">
             </div>
 
-            <div class="artist-card" data-category="painters" data-category="all">
-                <a href="/HTML/artist2-dina-chan.html">
-                    <img src="/Assets/image4.jpg" alt="Dina Chhan">
-                    <div class="artist-name">Dina Chhan</div>
-                </a>
+            <div class="artist-info">
+                <div class="spotlight-label">Artist Spotlight</div>
+                    <div class="artist-details">
+                        <h2>Sothy Chim</h2>
+                        <p class="artist-description">
+                        Sothy Chim is a Cambodian Artist who has a love for Khmer history and its culture. 
+                        He’s also deeply interested in European art as well, which has inspired him to create 
+                        artworks that clash between these two worlds.
+                        </p>
+                        <p class="artist-description">
+                        Born and raised in Phnom Penh, he pays homage to the colors of his homeland. His art 
+                        style depicts the four elements of earth, sky, water, and land alongside with playful 
+                        effects of light and colors.
+                        </p>
+                    </div>
+                    <a href="Artist.html" class="view-all-button">View All</a>
+                </div>
             </div>
 
-            <div class="artist-card" data-category="photographers" data-category="all">
-                <a href="/HTML/artist3-kolkateka.html">
-                    <img src="/Assets/image3.jpg" alt="Khun Kolkateka">
-                    <div class="artist-name">Khun Kolkateka</div>
-                </a>
-            </div>
 
-            <div class="artist-card" data-category="sculptors" data-category="all">
-                <a href="/HTML/artist4-nak-noy.html">
-                    <img src="/Assets/image2.jpg" alt="Nak Noy">
-                    <div class="artist-name">Nak Noy</div>
-                </a>
-            </div>
-        </div>
-
-        <!-- Gallery Row 2 -->
-        <div class="gallery-container2">
-            <div class="artist-card" data-category="photographers" data-category="all">
-                <a href="/HTML/artist5-cheanick.html">
-                    <img src="/Assets/image5.jpg" alt="Cheanick Nov">
-                    <div class="artist-name">Cheanick Nov</div>
-                </a>
-            </div>
-
-            <div class="artist-card" data-category="painters" data-category="all">
-                <a href="/HTML/artist6-vutha-tor.html">
-                    <img src="/Assets/image6.jpg" alt="Vutha Tor">
-                    <div class="artist-name">Vutha Tor</div>
-                </a>
-            </div>
-
-            <div class="artist-card" data-category="painters" data-category="all">
-                <a href="/HTML/artist7-sareth-svay.html">
-                    <img src="/Assets/image7.jpg" alt="Sareth Svay">
-                    <div class="artist-name">Sareth Svay</div>
-                </a>
-            </div>
-
-            <div class="artist-card" data-category="illustrators" data-category="all">
-                <a href="/HTML/artist7-sareth-svay.html">
-                    <img src="/Assets/image8.jpg" alt="Chov Theanly">
-                    <div class="artist-name">Chov Theanly</div>
-                </a>
-            </div>
-        </div>
-        <!-- End of Gallery -->
+            <!-- Artist's Artworks -->
+            <section class="artwork-list">
+            <ul class="artworks">
+                <li class ="artwork-card"><a href="/HTML/product_details.html">
+                    <img class="artwork-img" src="/Assets/art1.jpg" alt="Ballerina">
+                    <p class="artwork-name">Suzanne</p>
+                    <p class="category">Oil on Canvas</p>
+                    <p class="artist-name">by Dina Chhan</p>
+                    <p class="price">$600</p></a></li>
+                    
+                <li class ="artwork-card"><a href="/HTML/product_details.html">
+                    <img class="artwork-img" src="/Assets/art2.jpeg" alt="Godkiller">
+                    <p class="artwork-name">Lotus Pond</p>
+                    <p class="category">Oil on Canvas</p>
+                    <p class="artist-name">by Sothy Chim</p>
+                    <p class="price">$890</p></a></li>
+                    
+                <li class ="artwork-card"><a href="/HTML/product_details.html">
+                    <img class="artwork-img" src="/Assets/art3.jpeg" alt="Godkiller">
+                    <p class="artwork-name">Sunset</p>
+                    <p class="category">Oil on Canvas</p>
+                    <p class="artist-name">by Khun Kolkateka</p>
+                    <p class="price">$780</p></a></li>
+                    
+                <li class ="artwork-card"><a href="/HTML/product_details.html">
+                    <img class="artwork-img" src="/Assets/art4.jpeg" alt="Godkiller">
+                    <p class="artwork-name">Blue Atmosphere</p>
+                    <p class="category">Oil on Canvas</p>
+                    <p class="artist-name">by Khun Kolkateka</p>
+                    <p class="price">$900</p></a></li></ul>
+            </section>
+        </div>    
+        <!-- End of Artist Info -->
 
 
         <!-- Footer -->
@@ -184,7 +163,7 @@
             </div>
         </footer>
         <!-- End of Footer -->
+    
         
-
     </body>
 </html>
