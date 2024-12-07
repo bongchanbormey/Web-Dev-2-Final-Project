@@ -182,8 +182,8 @@ header {
 
 .member-container > *:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    border-bottom: 5px solid rgb(13, 0, 77);
+    box-shadow: 0 10px 20px rgba(158, 158, 158, 0.5);
+    border-bottom: 5px solid #b4d4ff;
 }
 
 .member-container img {
