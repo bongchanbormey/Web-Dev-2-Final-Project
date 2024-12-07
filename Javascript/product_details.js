@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add event listener for "Buy Now" button
     document.getElementById('buy-now').addEventListener('click', () => {
         console.log('Proceeding to checkout for Blessing Apsara.');
-        // alert('You will be redirected to the checkout page.');
         window.location.href = '/HTML/checkout.html'; // Replace with your actual checkout URL
     });
 });
