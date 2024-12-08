@@ -79,7 +79,7 @@ Selapak is a web platform that provides a digital space for local Khmer artists 
 ---
 
 ## Technologies Used  
-- **HTML5, CSS3, JavaScript, and jQuery:**   
+- **HTML5, CSS3, JavaScript, and jQuery**   
 
 ---
 
@@ -90,13 +90,6 @@ Selapak is a web platform that provides a digital space for local Khmer artists 
     + [Google](google.com)
     + [Pinterest](pinterest.com)
     + [Freepik](freepik.com)
-
----
-
-## Credits  
-- **Design & Development:** Your Name/Team Name  
-- **Artwork Contributors:** Featured Khmer artists  
-- **Special Thanks:** Supporters of Khmer art and culture  
 
 ---
 
